@@ -76,9 +76,6 @@ import java.util.Properties;
 
 public class MAIN1 {
 
-    @Value("${spring.datasource.url}")
-    private String dbUrl;
-
     @Autowired
     private DataSource dataSource;
     public static String carptausuario = "target\\_Docs";
@@ -97,7 +94,7 @@ public class MAIN1 {
      *
      *
      */
-    public static void main(String[] args) throws Exception {
+    public static void datos(String[] args) throws Exception {
 
 //        SpringApplication.run(MAIN.class, args);
         //  DOMConfigurator.configure("log4j.xml");
