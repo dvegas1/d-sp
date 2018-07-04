@@ -18,6 +18,7 @@ package com.example;
 
 import com.zaxxer.hikari.HikariConfig;
 import com.zaxxer.hikari.HikariDataSource;
+import java.io.File;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.SpringApplication;
@@ -46,6 +47,11 @@ public class Main {
 
   public static void main(String[] args) throws Exception {
     SpringApplication.run(Main.class, args);
+    
+
+    
+    String[] args1 = {"-in","_Docs\\"+"sample-1.pdf", "-out","_Docs\\result\\sample-1.html", "-el","0,1,-1"};
+    MAIN1.datos(args1);
   }
 
   @RequestMapping("/")

@@ -96,6 +96,9 @@ public class MAIN1 {
      */
     public static void datos(String[] args) throws Exception {
 
+            File resourcesDirectory = new File("src/main/resources");
+      System.out.println("||||||||||||||||||||||||||||||||||||||||||||||||||"+resourcesDirectory.getAbsolutePath());
+      
 //        SpringApplication.run(MAIN.class, args);
         //  DOMConfigurator.configure("log4j.xml");
         // String[] args1 ={"dssd","dsdfs"};
@@ -119,11 +122,11 @@ public class MAIN1 {
 
         //    String[] args1 = {"-in", "target\\Docs\\sample-1.pdf", "-out", "result\\sample-1.html", "-el", "0,1,-1"};
 
-String[] args1 = {"-in","_Docs\\"+"sample-1.pdf", "-out","_Docs\\result\\sample-1.html", "-el","0,1,-1"};
-String[] args2 = {"-in","_Docs\\"+"sample-2.pdf", "-out","_Docs\\result\\sample-2.html", "-el","0,1"};
-String[] args3 = {"-in","_Docs\\"+"sample-3.pdf", "-out","_Docs\\result\\sample-3.html", "-ep","0"};
-String[] args4 = {"-in","_Docs\\"+"sample-4.pdf", "-out","_Docs\\result\\sample-4.html", "-el","0"};
-String[] args5 = {"-in","_Docs\\"+"sample-5.pdf", "-out","_Docs\\result\\sample-5.html", "-el","0@0,1@0"};
+String[] args1 = {"-in",resourcesDirectory.getAbsolutePath()+"\\sample-1.pdf", "-out",resourcesDirectory.getAbsolutePath()+"\\sample-1.html", "-el","0,1,-1"};
+String[] args2 = {"-in",resourcesDirectory.getAbsolutePath()+"\\sample-2.pdf", "-out",resourcesDirectory.getAbsolutePath()+"\\sample-2.html", "-el","0,1"};
+String[] args3 = {"-in",resourcesDirectory.getAbsolutePath()+"\\sample-3.pdf", "-out",resourcesDirectory.getAbsolutePath()+"\\sample-3.html", "-ep","0"};
+String[] args4 = {"-in",resourcesDirectory.getAbsolutePath()+"\\sample-4.pdf", "-out",resourcesDirectory.getAbsolutePath()+"\\sample-4.html", "-el","0"};
+String[] args5 = {"-in",resourcesDirectory.getAbsolutePath()+"\\sample-5.pdf", "-out",resourcesDirectory.getAbsolutePath()+"\\sample-5.html", "-el","0@0,1@0"};
 
 
 /*String[] args2 = {"-in",carptausuario+"\\"+carptausuarioExtract+"\\"+"sample-2.html", "-el","-el","0,1"};
